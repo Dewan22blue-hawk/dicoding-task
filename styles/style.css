@@ -113,7 +113,7 @@ main aside section img:hover {
 
 footer {
   padding: 10px;
-  color: black;
+  color: white;
   background-color: #18120e;
   text-align: center;
 }
@@ -123,8 +123,17 @@ h2 {
 }
 
 .rounded {
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   width: 128px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-item {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -148,37 +157,16 @@ h2 {
 
 .social-icon {
   font-size: 40px;
-  color: white;
+  color: black;
 }
 
 figcaption {
   font-size: 32px;
 }
 
-.card-menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-items: center;
-  justify-content: center;
-  gap: 24px;
-}
-
-.card-custom {
-  background-color: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  height: 550px;
-  width: 280px;
-  margin: 0 auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-custom .card-img {
-  width: 100%;
-  height: 240px;
-  object-fit: cover;
+.card-data {
+  height: 100px;
+  width: 400px;
 }
 
 .about {
