@@ -101,6 +101,7 @@ main {
 main #content {
   float: left;
   width: 75%;
+  margin-bottom: 1.5rem;
 }
 
 main aside section img {
@@ -169,6 +170,11 @@ figcaption {
   width: 400px;
 }
 
+.list-item {
+  display: flex;
+  flex-direction: column;
+}
+
 .about {
   display: flex;
   flex-direction: column;
@@ -225,5 +231,10 @@ figcaption {
     width: 100%;
     padding-left: 0;
     margin-top: 20px;
+  }
+
+  .card-data {
+    height: 100px;
+    width: 100%;
   }
 }
