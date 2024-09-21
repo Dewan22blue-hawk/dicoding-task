@@ -9,42 +9,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
-    
-    <script src="https://cdn.jsdelivr.net/gh/lepture/github-cards@latest/widget.js"></script>
+        <style>
+      /* Tambahan CSS untuk animasi */
+      .heartbeat {
+        display: inline-block;
+        animation: heartbeat 1s infinite;
+      }
 
-
+      @keyframes heartbeat {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: scale(1);
+        }
+        10% {
+          transform: scale(1.2);
+        }
+      }
+    </style>
     <!-- Tambahkan link Remix Icon CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
-    <script defer src="scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
   </head>
+  
   <body>
     <header>
-      <!-- <div class="jumbotron">img</div> -->
-      <nav class="navbar">
-        <a href="#" class="navbar-logo">DWN<span>DEV</span></a>
-        <div class="navbar-nav">
-          <a href="#home">Home</a>
-          <a href="#about">Tentang Kami</a>
-          <a href="#menu">Menu</a>
-          <a href="#products">Produk</a>
-          <a href="#contact">Kontak</a>
+      <header>
+        <div class="jumbotron">
+            <h1>Hello <span>World <i class="ri-terminal-line"></i></span> !</h1>
+            <p>Hi there! 👋 I'm <span id="text-container"></span><span class="cursor">|</span></p>
         </div>
-
-        <div class="navbar-extra">
-          <a href="#" id="hamburger-menu"><i class="ri-menu-line"></i></a>
-        </div>
-      </nav>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#project">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
       <div id="content">
-          <article id="aboutme" class="card">
+          <article id="about" class="card">
               <h2>About Me</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nemo, dolorem id, voluptatem asperiores voluptates at rerum quisquam dicta et aspernatur ipsa laborum odio voluptate? Eveniet cupiditate ea numquam commodi, ducimus perferendis ipsa minima molestias consequatur veniam repellat quae mollitia, voluptatibus ex! Consequatur vitae maiores magni voluptatum odit temporibus repellat quo mollitia deserunt ut, maxime iste deleniti rerum laboriosam? Dolores consequatur odio fugiat amet, recusandae eveniet ullam optio reprehenderit. Qui nemo repudiandae, dolorem autem ipsam quis voluptate? Autem corporis accusantium alias earum adipisci explicabo, eaque praesentium. Sequi vitae doloribus vero possimus! Dolor vel vero est repudiandae eaque blanditiis sunt labore perferendis laudantium. Porro asperiores incidunt repudiandae. In, sapiente cum sit minus aspernatur iure consequuntur voluptates rerum omnis. Sed facilis eligendi voluptatem voluptas non quibusdam similique velit, impedit quidem consequuntur aliquam distinctio. Praesentium odit ipsam dolorem sed, quod accusantium animi. Deleniti exercitationem deserunt iste laudantium quam!</p>
+              <p>
+I am a proactive and versatile IT professional with hands-on experience in technical support, network administration, and programming. My career began as an Assistant Technical Support intern, where I gained practical experience troubleshooting various technical issues, including hardware/software maintenance, network configuration, and installation of CCTV systems and network infrastructure. I actively assisted users in resolving daily challenges related to software, hardware, and web applications, which honed my problem-solving abilities and strengthened my understanding of programming and systems administration.
+In my role, I consistently collaborated with team members and clients, demonstrating strong communication skills and the ability to translate complex technical concepts into clear, actionable solutions for non-technical users. I have successfully managed projects involving the installation and maintenance of IT systems, and I excel in environments that demand a combination of critical thinking, adaptability, and technical know-how. My passion for technology extends beyond technical support, as I am continually improving my programming skills to offer more efficient solutions and innovations.
+</p>
           </article>
 
-          <article id="myproject" class="card">
-              <h2>Project Saya</h2>
+          <article id="project" class="card">
+              <h2>My Project</h2>
               <div class="card-item">
                 <img class="card-data" src="https://gh-card.dev/repos/Dewan22blue-hawk/report-desk-CI4.svg" alt="">
                 <img class="card-data" src="https://gh-card.dev/repos/Dewan22blue-hawk/project_ETicket.svg" alt="">
@@ -54,12 +71,12 @@
               </div>
           </article>
 
-          <article id="contactme" class="card">
+          <article id="contact" class="card">
               <h2>Let's get in touch</h2>
-              <p>Ingin berkolaborasi, memiliki pertanyaan, atau hanya ingin mengobrol tentang ide-ide kreatif? Saya selalu senang mendengar dari Anda. Jangan ragu untuk menghubungi saya, dan mari kita lihat bagaimana kita bisa menciptakan sesuatu yang hebat bersama!</p>
+              <p>Looking to collaborate, have questions, or just want to chat about creative ideas? I'm always happy to hear from you. Feel free to contact me, and let's see how we can create something great together!</p>
               <div class="list-item">
-                <span><i class="ri-mail-fill"></i> dennyirawan@gmail.com</span>
-                <span><i class="ri-whatsapp-fill"></i> +62 812-3456-7890</span>
+                <span><i class="ri-mail-fill"></i> dennyirawan170204@gmail.com</span>
+                <span><i class="ri-whatsapp-fill"></i> +62 852 3754 5993</span>
               </div>
           </article>
       </div>
@@ -67,17 +84,17 @@
       <aside>
           <article class="profile card">
               <header>
-                  <h2>Programmer</h2>
+                  <h2>Junior Programmer</h2>
                   <figure>
                       <img src="assets/images/denny_avatar.png" alt="wahyupng" class="rounded">
                       <figcaption>Denny Irawan</a></figcaption>
                       <blockquote>Web Developer</blockquote>
                   </figure>
                   <section>
-                      <a href="https://github.com/hawk-xc">
+                      <a href="https://github.com/Dewan22blue-hawk/">
                           <i class="social-icon ri-github-fill"></i>
                       </a>
-                      <a href="https://www.linkedin.com/in/wahyu-tri-cahyono-2824052b7/">
+                      <a href="https://www.linkedin.com/in/denny-irawan22">
                           <i class="social-icon ri-linkedin-box-fill"></i>
                       </a>
                   </section>
@@ -85,9 +102,8 @@
           </article>
       </aside>
   </main>
-
-  <footer>
-      <p>build by Denny Irawan with 💖</p>
-  </footer>
-  </body>
+    <footer>
+      <p>&copy; <span id="currentYear"></span> DWN<span>DEV</span> | Semua hak dilindungi. <span class="heartbeat">❤️</span> <span id="jsyear"></span></p>
+    </footer>
+  </body>
 </html>

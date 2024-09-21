@@ -24,6 +24,23 @@ body {
   color: black;
 }
 
+#text-container {
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.cursor {
+  font-size: 2rem;
+  display: inline-block;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -39,15 +56,23 @@ header {
 
 header .jumbotron {
   position: relative;
-  color: #ffca2c;
+  color: var(--bg);
   font-size: 20px;
   padding: 60px;
   text-align: center;
-  background-image: url("../images/banner.jpg");
+  background-color: var(--primary);
   background-size: cover;
   background-position: center;
   height: 300px;
   z-index: 1;
+}
+
+header .jumbotron span {
+  color: var(--primary);
+}
+header .jumbotron span#text-container {
+  color: white;
+  font-size: 20px;
 }
 
 header .jumbotron::before {
@@ -66,7 +91,7 @@ header nav {
   z-index: 50;
   padding: 5px;
   position: sticky;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #2b203b;
 }
 
 header nav li {
@@ -84,7 +109,7 @@ header nav a {
 
 main aside {
   float: right;
-  width: 25%;
+  width: 30%;
   padding-left: 20px;
   color: black;
   position: sticky;
@@ -100,7 +125,7 @@ main {
 
 main #content {
   float: left;
-  width: 75%;
+  width: 70%;
   margin-bottom: 1.5rem;
 }
 
@@ -115,8 +140,11 @@ main aside section img:hover {
 footer {
   padding: 10px;
   color: white;
-  background-color: #18120e;
+  background-color: #1e1729;
   text-align: center;
+}
+footer span {
+  color: var(--primary);
 }
 
 h2 {
